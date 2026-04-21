@@ -15,8 +15,8 @@ class Pibox < Formula
   def post_install
     templates_dir = "#{Dir.home}/.pibox/templates"
     unless File.exist?("#{templates_dir}/default.yaml")
-      FileUtils.mkdir_p(templates_dir)
-      FileUtils.cp("#{pkgshare}/templates/default.yaml", "#{templates_dir}/default.yaml")
+      mkdir_p templates_dir
+      cp "#{pkgshare}/templates/default.yaml", "#{templates_dir}/default.yaml"
     end
   end
 
@@ -32,6 +32,6 @@ class Pibox < Formula
   end
 
   test do
-    system "#{bin}/pibox", "--help"
+    system bin/"pibox", "--help"
   end
 end
