@@ -1,7 +1,7 @@
 class Pibox < Formula
   desc "Throwaway Linux VMs for running coding agents on untrusted work"
   homepage "https://github.com/Giardi77/pibox"
-  url "https://github.com/Giardi77/pibox/archive/refs/tags/1.2.2.tar.gz"
+  url "https://github.com/Giardi77/pibox/archive/refs/tags/1.2.3.tar.gz"
   sha256 "bdd702349644394d96b93d1736d9806cc90d5b7db261babad12fe56d4a4ac779"
   license "MIT"
 
